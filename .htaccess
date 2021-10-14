@@ -1,0 +1,11 @@
+﻿# включить перенпаравление
+RewriteEngine on
+
+# перенаправление на папку public
+RewriteCond %{REQUEST_URI} !^public
+
+# но кроме этой папки (подпапка 'no' - исключение)
+RewriteCond %{REQUEST_URI} !^/no.*$
+
+# выполнить перенаправление
+RewriteRule ^(.*)$ public/$1 [L]
