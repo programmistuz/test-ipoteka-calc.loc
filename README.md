@@ -7,7 +7,7 @@
 ## Стек технологий
 
 - Laravel
-- Vue
+- Vue + Vuex + Vuetify
 
 ## Установка
 
